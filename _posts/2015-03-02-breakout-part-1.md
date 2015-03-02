@@ -6,7 +6,7 @@ categories: breakout tutorial
 published: true
 ---
 
-All right, this is my first tutorial series, so be nice :D
+All right, this is my first tutorial series, so be nice :D 
 
 In this tutorial I will try to develop al simple clone of Breakout using <a title="" target="_blank" href="http://duality.fetzenet.de">Duality</a>.
 Being a quite simple game concept, it shouldn't be too difficult to implement, at least at a basic level.
