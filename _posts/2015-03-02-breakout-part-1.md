@@ -23,7 +23,7 @@ For this tutorial, no extra resources are needed other than what is already pres
 But first things first, a quick and extremely simplified overview of Breakout: the goal of the game is to break a wall of bricks using a ball, while steering a paddle around to stop the ball from leaving the game area. The ball moves using a constant motion and can bounce on the bricks, the walls of the game area, and the paddle. Whenever a brick is hit by the ball, it gets damaged and when its "health" is depleted, it is removed from the game; when all the bricks have been removed, the level is clear and the game moves to the next one. If the ball goes out of the game area, the players loses one life and a new ball is put into play. When all lives are gone, the game is over.
 
 So let's start and see where it takes us; fire up Dualitor and create a new project called "Breakout": you will see something like this (results may vary, depending on your version)
-<img src="{{ site.url }}/_images/breakout-tutorial-part-1-1.png"></img>
+<img src="{{ site.url }}/images/breakout-part-1-1.png"></img>
 The first thing we need for our game, is the ball.
 
 Add a <xm>New &#9654; GameObject</xm> to the Scene, and call it "<xn>Ball</xn>"; add a <xm>New &#9654; Graphics &#9654; SpriteRenderer</xm> to our <xn>Ball</xn>: by default it will appear as the Duality logo, which is a good enough ball for our purposes.. just a little too big; so change the new <xp>SpriteRenderer.Rect</xp> to <xc>[-10, -10, 20, 20]</xc>.
