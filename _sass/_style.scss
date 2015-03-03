@@ -1,3 +1,10 @@
+div.posts {
+    position: fixed;
+    left: 0;
+    width: 200px;
+    background: #ff0000;
+}
+
 .post-excerpt {
     font-size: 12px;
 }
@@ -49,4 +56,9 @@ article img {
     width: 98%;
     border: 1px solid #003459;
     border-radius: 5px;
+}
+
+a img {
+    display: block;
+    margin: auto;
 }
