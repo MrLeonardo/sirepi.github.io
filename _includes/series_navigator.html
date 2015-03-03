@@ -1,0 +1,31 @@
+<div class="posts">
+<table>
+{% if page.lesson != '' %}
+  <thead><tr>
+    <th class="title">in this series</th>
+    <th>&nbsp;</th>
+  </tr></thead><tbody>
+  {% assign lesson_id = page.lesson | split:'#' | first %}
+  {% assign lesson_number = page.lesson | split:'#' | last %}
+  {% for post in site.posts reversed %}
+    {% assign post_lesson_id = post.lesson | split:'#' | first %}
+    {% if post_lesson_id == lesson_id %}
+    <tr>
+      <td class="link {% if page.lesson == post.lesson %}current{% endif %}">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </td>
+      <td class="svg {% if page.lesson == post.lesson %}current{% endif %}">
+        <svg viewBox="0 0 1 1">
+          <path d="M0,0L0,1L0.5,0.5Z" fill="#cccccc"></path>
+        </svg>
+      </td>
+    </tr>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+</tbody><tfoot><tr>
+    <td class="footer">&nbsp;</td>
+    <td>&nbsp;</td>
+    </tr></tfoot>
+</table>
+</div>

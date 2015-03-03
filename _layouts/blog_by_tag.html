@@ -3,13 +3,14 @@ layout: default
 ---
 
 <div class="home">
-  <h1 class="page-heading">Posts</h1>
-  <ul class="post-list">
-    {% for post in site.posts %}
+  <h1 class="page-heading">Articles by tag: {{ page.tag }}</h1>
+  {% if site.tags[page.tag] %}
+    <ul class="post-list">
+    {% for post in site.tags[page.tag] %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <span class="post-meta">{{ post.tags | join: ', ' }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
           <div class="post-excerpt">
           {% if post.content contains '<!--more-->' %}
@@ -22,4 +23,7 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+  {% else %}
+   <p>There are no posts for this tag.</p>
+  {% endif %}
 </div>

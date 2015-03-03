@@ -1,8 +1,82 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    line-height: 20px;
+    text-align: justify;
+}
+
+
+/************
+ Linked posts 
+ ************/
 div.posts {
     position: fixed;
     left: 0;
-    width: 200px;
-    background: #ff0000;
+    width: 180px;
+}
+
+div.posts table {
+    width: 100%;
+    border-spacing: 0px;
+}
+
+div.posts th.title{
+    font-size: 14px;
+    font-weight: normal;
+    border-bottom: 5px solid #424242;
+    text-align: center;
+}
+
+div.posts td {
+    padding: 2px 0 2px 0;
+    background: #eeeeee;
+    text-align: left;
+}
+
+div.posts td.svg {
+    padding: 0;
+    width: 26px;
+    visibility: hidden;
+    background: transparent;
+}
+
+div.posts td svg {
+    display: block;
+    margin: auto;
+}
+
+div.posts td.svg.current {
+    visibility: visible;
+}
+
+/*
+div.posts td.link {
+    box-shadow: 1px 1px 2px #555;
+}
+*/
+
+div.posts td.link.current {
+    background: #cccccc;
+}
+
+div.posts a {
+    font-size: 13px;
+    margin-left: 2px;
+}
+
+div.posts tfoot td {
+    background: transparent;
+} 
+
+div.posts tfoot td.footer{
+    border-top: 1px solid #424242;
+}
+
+@media all and (max-width: 1100px)
+{
+    div.posts {
+        display: none;
+    }
 }
 
 .post-excerpt {
@@ -10,10 +84,13 @@ div.posts {
 }
 
 .post-content {
-    font-family: sans-serif;
     font-size: 13px;
 }
 
+
+/*******
+ Article
+ *******/
 article xm {
     background: #d8efff; 
     border: 1px solid #bfe4ff; 
@@ -50,6 +127,19 @@ article xd {
     color: #003459;
 }
 
+article explain {
+    background: none repeat scroll 0 0 #f9e197;
+    border: 1px solid #c07525;
+    border-radius: 5px;
+    display: block;
+    margin: 10px 0;
+    padding: 3px;
+}
+
+article li {
+    margin-bottom: 3px;
+}
+
 article img {
     border: 1px solid #003459;
     width: 98%;
@@ -57,7 +147,43 @@ article img {
     padding: 1px;
 }
 
-a img {
+article a img {
     display: block;
     margin: auto;
+}
+
+
+.post-meta {
+    font-size: 12px;
+}
+
+.post-meta .value {
+    color: #333;
+}
+
+
+/*******
+ License
+ *******/
+.license {
+    font-size: 10px;
+}
+
+.license img {
+    display: inline;
+}
+
+
+.site-footer {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.footer-col-wrapper {
+    color: #555;
+}
+
+/** gists override **/
+.gist .gist-meta {
+    font-size: 10px !important;
 }
