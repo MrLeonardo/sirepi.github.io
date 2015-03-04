@@ -1,0 +1,30 @@
+---
+title: Blog - grouped by tag
+layout: page_with_link
+link: "/blog/|show all"
+---
+{% assign tags_list = '' %}
+{% for post in site.posts %}
+{% for tag in post.tags %}
+  {% unless tags_list contains tag %}
+    {% capture tags_list %}{{ tag }}|{{ tags_list }}{% endcapture %}
+  {% endunless %}
+{% endfor %}
+{% endfor %}
+{% assign tags_list_length = tags_list | size | minus:1 %}
+{% assign tags_list = tags_list | truncate:tags_list_length, '' | split:'|' %}
+<article class="post-content">
+{% if tags_list %}
+  {% for tag in tags_list %}
+    Posts tagged <span class="value">{{ tag }}</span>
+    <hr>
+  <ul class="post-list">
+  {% for post in site.tags[tag] %}
+    {% include post_snippet.html post=post %}
+  {% endfor %}
+  </ul>
+  {% endfor %}
+{% else %}
+  <p>There are no posts for this tag.</p>
+{% endif %}
+</article>

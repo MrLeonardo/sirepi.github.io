@@ -11,74 +11,75 @@ body {
  ************/
 div.posts {
     position: fixed;
-    left: 0;
     width: 180px;
-}
+    left: 0;
+    left: -webkit-calc(50% - (#{$content-width} / 2) - 150px);
+    left:         calc(50% - (#{$content-width} / 2) - 150px);
 
-div.posts table {
-    width: 100%;
-    border-spacing: 0px;
-}
-
-div.posts th.title{
-    font-size: 14px;
-    font-weight: normal;
-    border-bottom: 5px solid #424242;
-    text-align: center;
-}
-
-div.posts td {
-    padding: 2px 0 2px 0;
-    background: #eeeeee;
-    text-align: left;
-}
-
-div.posts td.svg {
-    padding: 0;
-    width: 26px;
-    visibility: hidden;
-    background: transparent;
-}
-
-div.posts td svg {
-    display: block;
-    margin: auto;
-}
-
-div.posts td.svg.current {
-    visibility: visible;
-}
-
-div.posts td.link {
-    border-bottom: 1px solid #fff;
-}
-
-div.posts tbody tr:first-child td:first-child {
-    border-top: 1px solid #fff;
-}
-
-div.posts td.link.current {
-    background: #cccccc;
-}
-
-div.posts a {
-    font-size: 13px;
-    margin-left: 2px;
-}
-
-div.posts tfoot td {
-    background: transparent;
-} 
-
-div.posts tfoot td.footer{
-    border-top: 1px solid #424242;
-}
-
-@media all and (max-width: 1100px)
-{
-    div.posts {
+    @media all and (max-width: (#{$content-width + $spacing-unit + 300px})) {
         display: none;
     }
+
+    table {
+        width: 100%;
+        border-spacing: 0px;
+    }
+
+    th.title {
+        font-size: 14px;
+        font-weight: normal;
+        border-bottom: 5px solid #424242;
+        text-align: center;
+    }
+
+    td {
+        padding: 2px 0 2px 0;
+        background: #eeeeee;
+        text-align: left;
+    }
+
+    td svg {
+        display: block;
+        margin: auto;
+    }
+
+    td.svg {
+        padding: 0;
+        width: 26px;
+        visibility: hidden;
+        background: transparent;
+    }
+
+    td.svg.current {
+        visibility: visible;
+    }
+
+    td.link {
+        border-bottom: 1px solid #fff;
+    }
+
+    tbody tr:first-child td:first-child {
+        border-top: 1px solid #fff;
+    }
+
+    td.link.current {
+        background: #cccccc;
+    }
+
+    a {
+        font-size: 13px;
+        margin-left: 2px;
+    }
+
+    tfoot {
+        td {
+            background: transparent;
+        }
+        
+        td.footer {
+            border-top: 1px solid #424242;
+        }
+    } 
 }
 
 .post-excerpt {
@@ -93,67 +94,68 @@ div.posts tfoot td.footer{
 /*******
  Article
  *******/
-article xm {
-    background: #d8efff; 
-    border: 1px solid #bfe4ff; 
-    border-radius: 5px;
-    padding: 0px 2px;
-}
+article {
+    xm {
+        background: #d8efff; 
+        border: 1px solid #bfe4ff; 
+        border-radius: 5px;
+        padding: 0px 2px;
+    }
 
-article xc { 
-    font-family: 'Droid Sans Mono', monospace; 
-    font-size: 12px;
-    background: #dddddd;
-    border: 1px solid #aaaaaa;
-    border-radius: 5px;
-    padding: 0px 2px; 
-    color: #003459;
-}
+    xc { 
+        font-family: 'Droid Sans Mono', monospace; 
+        font-size: 12px;
+        background: #dddddd;
+        border: 1px solid #aaaaaa;
+        border-radius: 5px;
+        padding: 0px 2px; 
+        color: #003459;
+    }
 
-article xp { 
-    font-family: 'Droid Sans Mono', monospace; 
-    font-size: 12px; 
-    background: #dddddd; 
-    border: 1px solid #aaaaaa;
-    border-radius: 5px; 
-    padding: 0px 2px; 
-    font-style: italic; 
-}
+    xp { 
+        font-family: 'Droid Sans Mono', monospace; 
+        font-size: 12px; 
+        background: #dddddd; 
+        border: 1px solid #aaaaaa;
+        border-radius: 5px; 
+        padding: 0px 2px; 
+        font-style: italic; 
+    }
 
-article xn {
-    font-weight: bold;
-}
+    xn {
+        font-weight: bold;
+    }
 
-article xd {
-    font-style: italic; 
-    color: #003459;
-}
+    xd {
+        font-style: italic; 
+        color: #003459;
+    }
 
-article explain {
-    background: none repeat scroll 0 0 #f9e197;
-    border: 1px solid #c07525;
-    border-radius: 5px;
-    display: block;
-    margin: 10px 0;
-    padding: 3px;
-}
+    explain {
+        background: none repeat scroll 0 0 #f9e197;
+        border: 1px solid #c07525;
+        border-radius: 5px;
+        display: block;
+        margin: 10px 0;
+        padding: 3px;
+    }
 
-article li {
-    margin-bottom: 3px;
-}
+    li {
+        margin-bottom: 3px;
+    }
 
-article img {
-    border: 1px solid #003459;
-    width: 98%;
-    border-radius: 5px;
-    padding: 1px;
-}
+    img {
+        border: 1px solid #003459;
+        width: 98%;
+        border-radius: 5px;
+        padding: 1px;
+    }
 
-article a img {
-    display: block;
-    margin: auto;
+    a img {
+        display: block;
+        margin: auto;
+    }
 }
-
 
 .post-meta {
     font-size: 12px;
@@ -169,10 +171,10 @@ article a img {
  *******/
 .license {
     font-size: 10px;
-}
-
-.license img {
-    display: inline;
+    
+    img {
+        display: inline;
+    }
 }
 
 

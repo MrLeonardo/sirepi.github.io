@@ -1,29 +1,17 @@
 ---
 layout: default
 ---
-
-<div class="home">
-  <h1 class="page-heading">Articles by tag: {{ page.tag }}</h1>
-  {% if site.tags[page.tag] %}
-    <ul class="post-list">
-    {% for post in site.tags[page.tag] %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-          <div class="post-excerpt">
-          {% if post.content contains '<!--more-->' %}
-            {{ post.content | split:'<!--more-->' | first }}
-          {% else %}
-            {{ post.excerpt }}
-          {% endif %}
-          </div>
-          {{ post.categories | join:'gnagna' }}
-      </li>
-    {% endfor %}
+<header class="post-header">
+  <h1 class="post-title">Articles by tag: {{ page.tag }}</h1>
+</header>
+<article class="post-content">
+{% if site.tags[page.tag] %}
+  <ul class="post-list">
+  {% for post in site.tags[page.tag] %}
+    {% include post_snippet.html post=post %}
+  {% endfor %}
   </ul>
-  {% else %}
-   <p>There are no posts for this tag.</p>
-  {% endif %}
-</div>
+{% else %}
+  <p>There are no posts for this tag.</p>
+{% endif %}
+</article>

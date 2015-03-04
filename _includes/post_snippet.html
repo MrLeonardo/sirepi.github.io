@@ -1,0 +1,16 @@
+<li>
+  <span class="post-meta">{{ include.post.date | date: "%b %-d, %Y" }}</span>
+  <h2>
+    <a class="post-link" href="{{ include.post.url | prepend: site.baseurl }}">{{ include.post.title }}</a>
+      {% if include.showtags == 1 %}<span class="post-meta">{{ include.post.tags | join: ', ' }}</span>{% endif %}
+  </h2>
+{% if include.showexcerpt == 1 %}
+  <div class="post-excerpt">
+  {% if include.post.content contains '<!--more-->' %}
+    {{ include.post.content | split:'<!--more-->' | first }}
+  {% else %}
+    {{ include.post.excerpt }}
+  {% endif %}
+  </div>
+{% endif %}
+</li>
