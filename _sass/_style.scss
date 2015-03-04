@@ -49,11 +49,13 @@ div.posts td.svg.current {
     visibility: visible;
 }
 
-/*
 div.posts td.link {
-    box-shadow: 1px 1px 2px #555;
+    border-bottom: 1px solid #fff;
 }
-*/
+
+div.posts tbody tr:first-child td:first-child {
+    border-top: 1px solid #fff;
+}
 
 div.posts td.link.current {
     background: #cccccc;
@@ -174,7 +176,22 @@ article a img {
 }
 
 
-.site-footer {
+/******
+ Common
+ ******/
+.page-content {
+    padding: 0;
+}
+
+.page-content .wrapper {
+    box-shadow: 0 0 5px #888888;
+}
+
+.page-content .content-wrapper {
+    padding: 30px 0;
+}
+
+.site-header, .site-footer {
     background: #f0f0f0;
     color: #333;
 }
@@ -183,7 +200,10 @@ article a img {
     color: #555;
 }
 
-/** gists override **/
+
+/*****
+ Gists
+ ****/
 .gist .gist-meta {
     font-size: 10px !important;
 }

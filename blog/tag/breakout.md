@@ -1,5 +1,5 @@
 ---
 layout: blog_by_tag
 tag: breakout
-permalink: breakout/
+permalink: blog/tag/breakout/
 ---
