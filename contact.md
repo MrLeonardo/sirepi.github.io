@@ -4,10 +4,7 @@ title: Contact
 permalink: /contact/
 published: true
 ---
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 <!-- Do not change the code! -->
 <a id="foxyform_embed_link_643390" href="http://www.foxyform.com/">foxyform</a>
 <script type="text/javascript">

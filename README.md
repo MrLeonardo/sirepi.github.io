@@ -1,2 +1,2 @@
-# snowypeak.github.io
+# sirepi.github.io
 SnowyPeak Studio pages
