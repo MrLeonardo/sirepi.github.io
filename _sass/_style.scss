@@ -1,93 +1,100 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    color: #333;
-    line-height: 20px;
-    text-align: justify;
+  font-family: "Open Sans", sans-serif;
+  background: #f0f0f0;
+  color: #333;
+  line-height: 20px;
+  text-align: justify;
 }
 
+hr {
+  border: 0; 
+  height: 0; 
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 /************
  Linked posts 
  ************/
 div.posts {
-    position: fixed;
-    width: 180px;
-    left: 0;
-    left: -webkit-calc(50% - (#{$content-width} / 2) - 150px);
-    left:         calc(50% - (#{$content-width} / 2) - 150px);
+  position: fixed;
+  width: 180px;
+  left: 0;
+  left: -webkit-calc(50% - (#{$content-width} / 2) - 150px);
+  left:         calc(50% - (#{$content-width} / 2) - 150px);
 
-    @media all and (max-width: (#{$content-width + $spacing-unit + 300px})) {
-        display: none;
-    }
+  @media all and (max-width: (#{$content-width + $spacing-unit + 300px})) {
+    display: none;
+  }
 
-    table {
-        width: 100%;
-        border-spacing: 0px;
-    }
+  table {
+    width: 100%;
+    border-spacing: 0px;
+  }
 
-    th.title {
-        font-size: 14px;
-        font-weight: normal;
-        border-bottom: 5px solid #424242;
-        text-align: center;
-    }
+  th.title {
+    font-size: 14px;
+    font-weight: normal;
+    border-bottom: 5px solid #424242;
+    text-align: center;
+  }
 
+  td {
+    padding: 2px 0 2px 0;
+    background: #eee;
+    text-align: left;
+  }
+
+  td svg {
+    display: block;
+    margin: auto;
+  }
+
+  td.svg {
+    padding: 0;
+    width: 26px;
+    visibility: hidden;
+    background: transparent;
+  }
+
+  td.svg.current {
+    visibility: visible;
+  }
+
+  td.link {
+    border-bottom: 1px solid #fff;
+  }
+
+  tbody tr:first-child td:first-child {
+    border-top: 1px solid #fff;
+  }
+
+  td.link.current {
+    background: #ffd700;
+  }
+
+  a {
+    font-size: 13px;
+    margin-left: 2px;
+  }
+
+  tfoot {
     td {
-        padding: 2px 0 2px 0;
-        background: #eeeeee;
-        text-align: left;
+      background: transparent;
     }
 
-    td svg {
-        display: block;
-        margin: auto;
+    td.footer {
+      border-top: 1px solid #424242;
     }
-
-    td.svg {
-        padding: 0;
-        width: 26px;
-        visibility: hidden;
-        background: transparent;
-    }
-
-    td.svg.current {
-        visibility: visible;
-    }
-
-    td.link {
-        border-bottom: 1px solid #fff;
-    }
-
-    tbody tr:first-child td:first-child {
-        border-top: 1px solid #fff;
-    }
-
-    td.link.current {
-        background: #cccccc;
-    }
-
-    a {
-        font-size: 13px;
-        margin-left: 2px;
-    }
-
-    tfoot {
-        td {
-            background: transparent;
-        }
-        
-        td.footer {
-            border-top: 1px solid #424242;
-        }
-    } 
+  } 
 }
 
 .post-excerpt {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .post-content {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 
@@ -95,74 +102,74 @@ div.posts {
  Article
  *******/
 article {
-    xm {
-        background: #d8efff; 
-        border: 1px solid #bfe4ff; 
-        border-radius: 5px;
-        padding: 0px 2px;
-    }
+  xm {
+    background: #d8efff; 
+    border: 1px solid #bfe4ff; 
+    border-radius: 5px;
+    padding: 0px 2px;
+  }
 
-    xc { 
-        font-family: 'Droid Sans Mono', monospace; 
-        font-size: 12px;
-        background: #dddddd;
-        border: 1px solid #aaaaaa;
-        border-radius: 5px;
-        padding: 0px 2px; 
-        color: #003459;
-    }
+  xc { 
+    font-family: 'Droid Sans Mono', monospace; 
+    font-size: 12px;
+    background: #dddddd;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    padding: 0px 2px; 
+    color: #003459;
+  }
 
-    xp { 
-        font-family: 'Droid Sans Mono', monospace; 
-        font-size: 12px; 
-        background: #dddddd; 
-        border: 1px solid #aaaaaa;
-        border-radius: 5px; 
-        padding: 0px 2px; 
-        font-style: italic; 
-    }
+  xp { 
+    font-family: 'Droid Sans Mono', monospace; 
+    font-size: 12px; 
+    background: #ddd; 
+    border: 1px solid #aaa;
+    border-radius: 5px; 
+    padding: 0px 2px; 
+    font-style: italic; 
+  }
 
-    xn {
-        font-weight: bold;
-    }
+  xn {
+    font-weight: bold;
+  }
 
-    xd {
-        font-style: italic; 
-        color: #003459;
-    }
+  xd {
+    font-style: italic; 
+    color: #003459;
+  }
 
-    explain {
-        background: none repeat scroll 0 0 #f9e197;
-        border: 1px solid #c07525;
-        border-radius: 5px;
-        display: block;
-        margin: 10px 0;
-        padding: 3px;
-    }
+  explain {
+    background: none repeat scroll 0 0 #f9e197;
+    border: 1px solid #c07525;
+    border-radius: 5px;
+    display: block;
+    margin: 10px 0;
+    padding: 3px;
+  }
 
-    li {
-        margin-bottom: 3px;
-    }
+  li {
+    margin-bottom: 3px;
+  }
 
-    img {
-        border: 1px solid #003459;
-        width: 98%;
-        border-radius: 5px;
-        padding: 1px;
-    }
+  img {
+    border: 1px solid #003459;
+    width: 98%;
+    border-radius: 5px;
+    padding: 1px;
+  }
 
-    a img {
-        display: block;
-        margin: auto;
-    }
+  a img {
+    display: block;
+    margin: auto;
+  }
 }
 
 .post-meta {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .post-meta .value {
-    color: #333;
+  color: #333;
 }
 
 
@@ -170,11 +177,11 @@ article {
  License
  *******/
 .license {
-    font-size: 10px;
-    
-    img {
-        display: inline;
-    }
+  font-size: 10px;
+
+  img {
+    display: inline;
+  }
 }
 
 
@@ -182,30 +189,61 @@ article {
  Common
  ******/
 .page-content {
-    padding: 0;
-}
+  padding: 0;
+  background: #fff;
 
-.page-content .wrapper {
-    box-shadow: 0 0 5px #888888;
-}
+  .wrapper {
+    box-shadow: 0 0 5px #333;
+  }
 
-.page-content .content-wrapper {
+  .content-wrapper {
     padding: 30px 0;
+  }
 }
 
 .site-header, .site-footer {
-    background: #f0f0f0;
-    color: #333;
+  background: #f0f0f0;
+  color: #333;
 }
 
 .footer-col-wrapper {
-    color: #555;
+  color: #555;
 }
 
+.page-description {
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #333 inset;
+  border-radius: 5px;
+  display: block;
+  margin: 10px 0 30px;
+  padding: 5px;
+  
+  h1 {
+    font-size: 26px;
+    letter-spacing: -1px;
+    line-height: 1; 
+    display: inline;
+    vertical-align: middle;
+  }
+  
+  .fa-stack {
+    left: 0;
+    margin: -20px 0 0 -20px;
+  }
+  
+  .post-content {
+    margin-top: 5px;
+  }
+}
+
+.page-description:last-child {
+  margin: 10px 0;
+}
 
 /*****
  Gists
- ****/
+ *****/
 .gist .gist-meta {
-    font-size: 10px !important;
+  font-size: 10px !important;
 }

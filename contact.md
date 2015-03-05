@@ -2,17 +2,11 @@
 layout: page
 title: Contact
 permalink: /contact/
-published: true
+color: rgba(240, 128, 128, 255)
 ---
 
+Want to say something? Drop a line and I'll get back to you as soon as possible
 <!-- Do not change the code! -->
-<a id="foxyform_embed_link_643390" href="http://www.foxyform.com/">foxyform</a>
-<script type="text/javascript">
-(function(d, t){
-   var g = d.createElement(t),
-       s = d.getElementsByTagName(t)[0];
-   g.src = "http://www.foxyform.com/js.php?id=643390&sec_hash=f69c5ea5c97&width=350px";
-   s.parentNode.insertBefore(g, s);
-}(document, "script"));
-</script>
+<script type="text/javascript"> id = 192111; </script>
+<script type="text/javascript" src="http://kontactr.com/wp.js"></script>
 <!-- Do not change the code! -->

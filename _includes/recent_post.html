@@ -1,0 +1,5 @@
+{% assign first_post = site.posts | first %}
+<span class="post-meta">Most recent post</span><hr>
+<ul class="post-list">
+{% include post_snippet.html post=first_post showexcerpt=1 showtags=1 %}
+</ul>

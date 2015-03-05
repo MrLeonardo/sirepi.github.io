@@ -3,23 +3,21 @@ layout: default
 ---
 
 <div class="home">
-  <h1 class="page-heading">Posts</h1>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> <span class="post-meta">{{ post.tags | join: ', ' }}</span>
-        </h2>
-          <div class="post-excerpt">
-          {% if post.content contains '<!--more-->' %}
-            {{ post.content | split:'<!--more-->' | first }}
-          {% else %}
-            {{ post.excerpt }}
-          {% endif %}
-          </div>
-          {{ post.categories | join:'gnagna' }}
-      </li>
-    {% endfor %}
-  </ul>
+{% for page in site.pages %}
+  {% if (page.index-description) or (page.index-include) %}
+  <div class="page-description" style="border-color:{{ page.color }}">
+    {% if page.icon %}
+    <span class="fa-stack fa-2x">
+      <i class="fa fa-square fa-stack-2x" style="color:{{ page.color }}"></i>
+      <i class="fa fa-{{ page.icon | split:'|' | first }} fa-stack-1x"></i>
+    </span>
+    {% endif %}
+    <h1><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
+    <article class="post-content">
+    {{ page.index-description }}
+    {% if page.index-include %}{% include {{page.index-include}} %}{% endif %}
+    </article>
+  </div>
+  {% endif %}
+{% endfor %}
 </div>

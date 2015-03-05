@@ -1,8 +1,11 @@
 ---
 layout: page_with_link
 title: Blog
-link: "tags|group by tag"
+links: [ "tags|group by tag", "archive|archive" ]
+icon: comments-o
 permalink: /blog/
+index-include: recent_post.html
+color: "rgba(255, 215, 0, 1)"
 ---
 
 <ul class="post-list">

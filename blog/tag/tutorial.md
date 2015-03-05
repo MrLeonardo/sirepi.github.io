@@ -1,5 +1,5 @@
 ---
-layout: blog_by_tag
+layout: blog_tag
 tag: tutorial
 permalink: blog/tag/tutorial/
 ---
