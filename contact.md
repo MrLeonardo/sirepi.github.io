@@ -17,10 +17,8 @@ Want to say something? Drop a line and I'll get back to you as soon as possible<
       //link.attr('rel', 'stylesheet');
       //link.attr('type', 'text/css');
       //link.attr('href', '../css/kontactr.css');
-      
       $('body', window.frames['kontactr'].document).append(style);
       //$(this).append(link);
-      
       alert($(this).name);
     });*/
     $("#kontactr").attr('src', 'http://kontactr.com/xuser/192111/none');
