@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+icon: question
 permalink: /about/
 color: "rgba(152, 251, 152, 255)"
 ---
