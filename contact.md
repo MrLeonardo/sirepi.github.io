@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
+icon: envelope-o
 color: "rgba(240, 128, 128, 255)"
 published: true
 ---

@@ -241,12 +241,31 @@ article {
   margin: 10px 0;
 }
 
+.content-wrapper {
+  min-height: 300px;
+  
+  b {
+    margin-left: -20px;
+    margin-top: -20px;
+    position: fixed;
+    opacity: 0.075;
+    font-size: 300px;
+  }
+}
+
+div.post, div.home {
+  position: relative;
+  z-index: 1;
+}
+
+
 /*****
  Gists
  *****/
 .gist .gist-meta {
   font-size: 10px !important;
 }
+
 
 /***
  EMF
