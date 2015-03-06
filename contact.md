@@ -6,7 +6,8 @@ color: "rgba(240, 128, 128, 255)"
 published: true
 ---
 
-Want to say something? Drop a line and I'll get back to you as soon as possible<br>
+Want to say something? Drop a line and I'll get back to you as soon as possible
+
 <iframe id="kontactr">Sorry, but it seems that your browser does not support iframes.</iframe>
 <!-- Do not change the code! -->
 <script type="text/javascript"> id = 192111; </script>
