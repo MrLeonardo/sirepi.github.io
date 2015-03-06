@@ -1,2 +1,24 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+<script type="text/javascript">
+$("#kontactr").ready(function() {
+    /*$("#kontactr").load(function () {
+      var style = $('<style>label { color:#fff; }</style>');
+      //link.attr('rel', 'stylesheet');
+      //link.attr('type', 'text/css');
+      //link.attr('href', '../css/kontactr.css');
+      $('body', window.frames['kontactr'].document).append(style);
+      //$(this).append(link);
+      alert($(this).name);
+    });*/
+    var kontactr_iframe = $("#kontactr");
+    if(kontactr_iframe.length > 0) {
+      kontactr_iframe.attr('src', 'http://kontactr.com/xuser/192111/none');
+      kontactr_iframe.load(function() {
+        var iframebody = $('body', kontactr_iframe.contents())
+        var x = 0;
+      });
+    }
+    //src="http://kontactr.com/wp.js"    
+  });
+</script>

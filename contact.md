@@ -8,24 +8,5 @@ published: true
 
 Want to say something? Drop a line and I'll get back to you as soon as possible
 
-<iframe id="kontactr">Sorry, but it seems that your browser does not support iframes.</iframe>
-<!-- Do not change the code! -->
-<script type="text/javascript"> id = 192111; </script>
-<script type="text/javascript">
-(function() {
-  $(document).ready(function() {
-    /*$("#kontactr").load(function () {
-      var style = $('<style>label { color:#fff; }</style>');
-      //link.attr('rel', 'stylesheet');
-      //link.attr('type', 'text/css');
-      //link.attr('href', '../css/kontactr.css');
-      $('body', window.frames['kontactr'].document).append(style);
-      //$(this).append(link);
-      alert($(this).name);
-    });*/
-    $("#kontactr").attr('src', 'http://kontactr.com/xuser/192111/none');
-    //src="http://kontactr.com/wp.js"    
-  });
-})();
-</script>
-<!-- Do not change the code! -->
+<script src="http://www.emailmeform.com/builder/forms/jsform/UWCcb3RH0G8m556V7" type="text/javascript"></script>
+<div style="text-align:center"><div id='emf_advertisement'>Powered by<span style="position: relative; padding-left: 3px; bottom: -5px;"><img src="//assets.emailmeform.com/images/footer-logo.png?RU1GLTAyLTIxLTQwMmY5ZDk%3D" /></span>EMF <a style="text-decoration:none;" href="http://www.emailmeform.com/" target="_blank">Contact Form</a></div></div>

@@ -248,15 +248,13 @@ article {
   font-size: 10px !important;
 }
 
-/********
- Kontactr
- ********/
-iframe#kontactr {
-  width: 368px;
-  height: 600px; 
-  border: 0;
-  
-  label {
-    color: #f00;
+/***
+ EMF
+ ***/
+#emf_advertisement {
+  img {
+    border: 0;
+    width: 20px;
+    margin-bottom: 20px;
   }
 }
