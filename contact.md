@@ -10,8 +10,6 @@ Want to say something? Drop a line and I'll get back to you as soon as possible<
 <!-- Do not change the code! -->
 <script type="text/javascript"> id = 192111; </script>
 <script type="text/javascript">
-//src="http://kontactr.com/wp.js"
-
 (function() {
   $(document).ready(function() {
     /*$("#kontactr").load(function () {
@@ -26,7 +24,7 @@ Want to say something? Drop a line and I'll get back to you as soon as possible<
       alert($(this).name);
     });*/
     $("#kontactr").attr('src', 'http://kontactr.com/xuser/192111/none');
-    
+    //src="http://kontactr.com/wp.js"    
   });
 })();
 </script>
