@@ -3,7 +3,7 @@ layout: post
 title: "Hurt me plenty"
 date: 2015-03-03 11:44:12
 author: SirePi
-tags: [breakout, tutorial]
+tags: [duality, tutorial]
 published: true
 lesson: breakout#3
 images: breakout-part-3
@@ -23,7 +23,7 @@ set <xp>AngularDamping</xp>, <xp>LinearDamping</xp>, <xp>Friction</xp> to <xc>0.
 
 Now, we will want our Bricks to have a different durability from one another, and in this case we will also need a way to determine how much durability a single Brick has left; so let's head back to the IDE and create a new <xn>Brick</xn> class, deriving, as usual, from <xp>Component</xp> and fill in the code as follows:
 
-<script src="https://gist.github.com/SirePi/4a20477254b4790e4e28.js?file=brick_01.cs"></script>
+{% gist SirePi/4a20477254b4790e4e28 brick_01.cs %}
 
 You will notice something different from usual: this time, instead of having a public auto-property with get and set methods, I explicitly created the private backing field <xc>_hitPoints</xc>; this is due to the fact that we want
 the <xn>Brick</xn> to change its color (from red to black) depending on the remaining <xp>HitPoints</xp>.  

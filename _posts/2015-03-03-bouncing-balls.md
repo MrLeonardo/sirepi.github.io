@@ -3,7 +3,7 @@ layout: post
 title: "Bouncing balls"
 date: 2015-03-03 09:53:23
 author: SirePi
-tags: [breakout, tutorial]
+tags: [duality, tutorial]
 published: true
 lesson: breakout#2
 images: breakout-part-2

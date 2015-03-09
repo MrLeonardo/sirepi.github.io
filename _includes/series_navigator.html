@@ -1,6 +1,6 @@
 <div class="posts">
 <table>
-{% if page.lesson != '' %}
+{% if page.lesson != 'none' %}
   <thead><tr>
     <th class="title">in this series</th>
     <th>&nbsp;</th>
@@ -22,10 +22,10 @@
     </tr>
     {% endif %}
   {% endfor %}
-{% endif %}
 </tbody><tfoot><tr>
     <td class="footer">&nbsp;</td>
     <td>&nbsp;</td>
     </tr></tfoot>
+{% endif %}
 </table>
 </div>
