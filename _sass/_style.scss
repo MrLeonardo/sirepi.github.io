@@ -211,13 +211,25 @@ article {
 }
 
 .page-description {
-  background: none repeat scroll 0 0 #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 2px #333 inset;
-  border-radius: 2px;
-  display: block;
-  margin: 10px 0 30px;
+  background: none repeat scroll 0 0 #f7f7f7;
+  border: 1px solid #333;
+  float: left;
+  margin: 5px 5px 20px 5px;
   padding: 5px;
+  width: -webkit-calc(50% - 22px);
+  width:         calc(50% - 22px);
+  
+  article {
+    min-height: 150px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  icon-small {
+    position: absolute;
+    opacity: 0.075;
+    font-size: 150px;
+  }
   
   h1 {
     font-size: 26px;
@@ -235,16 +247,29 @@ article {
   .post-content {
     margin-top: 5px;
   }
-}
-
-.page-description:last-child {
-  margin: 10px 0;
+  
+  .title-bar {
+    border-top: 5px solid;
+    margin: -5px;
+    padding: 10px;
+    background: none repeat scroll 0 0 #ccc;
+    
+    a {
+      color: #111;
+    }
+  }
+  
+  @include media-query($on-palm) {
+    float: none;
+    width: -webkit-calc(100% - 22px);
+    width:         calc(100% - 22px);
+  }
 }
 
 .content-wrapper {
   min-height: 300px;
   
-  b {
+  icon {
     margin-left: -20px;
     margin-top: -20px;
     position: fixed;
@@ -270,6 +295,29 @@ article h3 {
   font-size: 10px !important;
 }
 
+div.github-widget {
+  margin-top: 7px;
+}
+
+div.github-box-title {
+  h3 {
+    font-size: 13px !important;
+    padding: 5px 10px 5px 30px !important;
+  }
+  
+  .github-stats {
+    top: 3px !important;
+  }
+}
+
+div.github-box-content {
+  font-size: 12px !important;
+  padding: 5px 10px !important;
+}
+
+div.github-box-download {
+  padding: 0 10px !important;
+}
 
 /***
  EMF

@@ -6,7 +6,7 @@
     <div class="page-content">
       <div class="wrapper">
         <div class="content-wrapper">
-        {% if page.icon %}<b class="fa fa-{{ page.icon | split:'|' | first }}"></b>{% endif %}
+        {% if page.icon %}<icon class="fa fa-{{ page.icon | split:'|' | first }}"></icon>{% endif %}
         {{ content }}
         </div>
       </div>

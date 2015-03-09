@@ -5,18 +5,17 @@ layout: default
 <div class="home">
 {% for page in site.pages %}
   {% if (page.index-description) or (page.index-include) %}
-  <div class="page-description" style="border-color:{{ page.color }}">
+  <div class="page-description">
     {% if page.icon %}
-    <span class="fa-stack fa-2x">
-      <i class="fa fa-square fa-stack-2x" style="color:{{ page.color }}"></i>
-      <i class="fa fa-{{ page.icon | split:'|' | first }} fa-stack-1x"></i>
-    </span>
+    <icon-small class="fa fa-{{ page.icon | split:'|' | first }}"></icon-small>
     {% endif %}
-    <h1><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
     <article class="post-content">
     {{ page.index-description }}
     {% if page.index-include %}{% include {{page.index-include}} %}{% endif %}
     </article>
+    <div class="title-bar" style="border-color:{{ page.color }}">
+      <h1><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
+    </div>
   </div>
   {% endif %}
 {% endfor %}
