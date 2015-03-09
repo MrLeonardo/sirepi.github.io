@@ -19,4 +19,4 @@ What you will find here though, it's a simple, no-frills-added loading screen (a
 Please note that, although in the code I explicitly set Textures and Materials as not to be loaded, there is actually no issue for this kind of loading screen, since the loading process is performed in the same thread as the rest of Duality.  
 It would be different if you wanted to use a secondary thread to perform the actual loading while showing not-choppy animations on the screen.
 
-You can grab the full sample project (to be extracted inside a vanilla Duality project) {% include file_download.html file='2015-03-09-loading-screen.zip' text='here' %}.
+You can grab the full sample project (to be extracted inside a vanilla Duality project) {% include filed.html file='2015-03-06-loading-screen.zip' text='here' %}.
