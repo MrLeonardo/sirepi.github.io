@@ -162,6 +162,12 @@ article {
     display: block;
     margin: auto;
   }
+  
+  td {
+    border-top: 1px solid #003459;
+    margin: 0;
+    padding: 0 5px;
+  }
 }
 
 .post-meta {
@@ -273,7 +279,7 @@ article {
     margin-left: -20px;
     margin-top: -20px;
     position: fixed;
-    opacity: 0.075;
+    opacity: 0.05;
     font-size: 300px;
   }
 }
