@@ -5,7 +5,7 @@ date: 2015-03-14 15:18:28
 author: SirePi
 tags: [duality, broken galaxy]
 published: true
-lesson: none
+lesson: brokengalaxy#1
 images: broken-galaxy-alpha-1
 ---
 And now, ladies and gentlemen, I am proud to present the release of alpha 1 of <xn>Broken Galaxy</xn>!
