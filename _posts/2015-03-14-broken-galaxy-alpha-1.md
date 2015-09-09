@@ -14,7 +14,7 @@ And now, ladies and gentlemen, I am proud to present the release of alpha 1 of <
 #### What is it?
 It's a 4X-lite strategy game of space conquest, heavily inspired by <a href="http://www.kongregate.com/games/kendja/little-stars-for-little-wars">Little Stars for Little Wars</a> and <a href="http://starlink.tasharen.com/">Starlink</a>.
 
-What I plan to do is expanding on their ideas, and then adding some more stretegic depth, such as a (small) technology tree, different playable races or player customization, multiple (but still few) resources, and complete star systems to manage instead of simple "nodes" to capture.  
+What I plan to do is expanding on their ideas, and then adding some more stretegic depth, such as a (small) technology tree, different playable races or player customization, multiple (but still few) resources, and complete star systems to manage instead of simple "nodes" to capture.
 Basically, I will try to take those two games and mix with a sprinkle of *Master of Orion* / *Galactic Civilization*.
 The game will play out in real time, with each action based on an internal "turn" timer that runs by itself, but at the same time it will be possible to pause the game at any moment and issue orders without the pressure of a real time environment, which I believe will be useful in the bigger and longer scenarios.
 
@@ -51,7 +51,7 @@ Sounds complicated but it's not, really.. plus the cursor will change depending 
 Plus, you can still give orders and move around while the game is paused so you can experiment with all the commands without the feeling of the AI creeping up on you.
 
 #### Combat resolution
-Combat is quite straightforward:  
+Combat is quite straightforward:
 whenever two opposing fleets meet, both lose ships equal to the amount of ships in the enemy's fleet. The bigger one wins and its ships are reduced, and the smaller one is destroyed.
 
 Star system attacks include the presence of mines around the system, protecting it and its fleets from outside attacks. The rules are the same as the fleet-fleet encounter, with the addition that the attacking fleet must first fight against the mines, and the remaining ships will carry on with the attack against the fleet stationed at the system. Don't worry, <xm>mines are capped at 10</xm>.
@@ -59,7 +59,7 @@ Star system attacks include the presence of mines around the system, protecting 
 Once a system has no ships or mines in orbit, any fleet will be able to conquer it.
 
 #### Colonization
-The last thing to know is that even though you conquered a star system, doesn't mean that you can gain something. You first need to colonize its planets.  
+The last thing to know is that even though you conquered a star system, doesn't mean that you can gain something. You first need to colonize its planets.
 For the moment, to colonize a planet or asteroid ring, you need to spend <xn>5 ships</xn> currently in orbit. This will be changed in the future with the addition of money and technology requirements for the various planet types.
 
 Currently, each planet type and size behaves differently in tems of production (which you can see as some colored bars in the System menu - they don't do anything else for now); in terms of usefulness for the game, as it is now, you should try to focus on these (in order): *Asteroids*, *Terran*, *Volcanic*, *Glacial*.
@@ -67,7 +67,7 @@ Currently, each planet type and size behaves differently in tems of production (
 Lastly, keep in mind that your starting system is not fully colonized! <xm>You start with one planet, 5 ships (just enough to colonize another one) and that's it</xm>.
 
 #### AI?
-Yes, it's quite stupid at the moment and its movements are heavily scripted and based on easily observable conditions. The only way it has to win now is probably if it gets a better starting position than the player, or if you make a huge mistake. Although sometimes it somehow managed to "outsmart" me.  
+Yes, it's quite stupid at the moment and its movements are heavily scripted and based on easily observable conditions. The only way it has to win now is probably if it gets a better starting position than the player, or if you make a huge mistake. Although sometimes it somehow managed to "outsmart" me.
 After the first couple or so games, you will most likely understand how it "thinks" and what it will do next.
 
 #### Ok, I won (or lost).. now what?
@@ -75,7 +75,7 @@ Now, just close the game and restart it, if you want :)
 
 #### What might go wrong?
 <explain>
-Everything :D I tried to take care of all the possible situations that could lead to a crash or a freeze of the application but, this being an alpha and me being a simple developer, I cannot guarantee 100% that your experience will be a happy, satisfactory and crash-free one.  
+Everything :D I tried to take care of all the possible situations that could lead to a crash or a freeze of the application but, this being an alpha and me being a simple developer, I cannot guarantee 100% that your experience will be a happy, satisfactory and crash-free one.
 Besides, Murphy is always behind the corner.
 </explain>
 

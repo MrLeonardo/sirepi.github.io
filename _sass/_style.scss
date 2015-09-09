@@ -7,14 +7,14 @@ body {
 }
 
 hr {
-  border: 0; 
-  height: 0; 
+  border: 0;
+  height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 /************
- Linked posts 
+ Linked posts
  ************/
 div.posts {
   position: fixed;
@@ -86,7 +86,7 @@ div.posts {
     td.footer {
       border-top: 1px solid #424242;
     }
-  } 
+  }
 }
 
 .post-excerpt {
@@ -103,30 +103,30 @@ div.posts {
  *******/
 article {
   xm {
-    background: #d8efff; 
-    border: 1px solid #bfe4ff; 
+    background: #d8efff;
+    border: 1px solid #bfe4ff;
     border-radius: 5px;
     padding: 0px 2px;
   }
 
-  xc { 
-    font-family: 'Droid Sans Mono', monospace; 
+  xc {
+    font-family: 'Droid Sans Mono', monospace;
     font-size: 12px;
     background: #dddddd;
     border: 1px solid #aaaaaa;
     border-radius: 5px;
-    padding: 0px 2px; 
+    padding: 0px 2px;
     color: #003459;
   }
 
-  xp { 
-    font-family: 'Droid Sans Mono', monospace; 
-    font-size: 12px; 
-    background: #ddd; 
+  xp {
+    font-family: 'Droid Sans Mono', monospace;
+    font-size: 12px;
+    background: #ddd;
     border: 1px solid #aaa;
-    border-radius: 5px; 
-    padding: 0px 2px; 
-    font-style: italic; 
+    border-radius: 5px;
+    padding: 0px 2px;
+    font-style: italic;
   }
 
   xn {
@@ -134,7 +134,7 @@ article {
   }
 
   xd {
-    font-style: italic; 
+    font-style: italic;
     color: #003459;
   }
 
@@ -162,7 +162,7 @@ article {
     display: block;
     margin: auto;
   }
-  
+
   td {
     border-top: 1px solid #003459;
     margin: 0;
@@ -224,47 +224,47 @@ article {
   padding: 5px;
   width: -webkit-calc(50% - 22px);
   width:         calc(50% - 22px);
-  
+
   article {
     min-height: 150px;
     position: relative;
     z-index: 1;
   }
-  
+
   icon-small {
     position: absolute;
     opacity: 0.075;
     font-size: 150px;
   }
-  
+
   h1 {
     font-size: 26px;
     letter-spacing: -1px;
-    line-height: 1; 
+    line-height: 1;
     display: inline;
     vertical-align: middle;
   }
-  
+
   .fa-stack {
     left: 0;
     margin: -20px 0 0 -20px;
   }
-  
+
   .post-content {
     margin-top: 5px;
   }
-  
+
   .title-bar {
     border-top: 5px solid;
     margin: -5px;
     padding: 10px;
     background: none repeat scroll 0 0 #ccc;
-    
+
     a {
       color: #111;
     }
   }
-  
+
   @include media-query($on-palm) {
     float: none;
     width: -webkit-calc(100% - 22px);
@@ -274,7 +274,7 @@ article {
 
 .content-wrapper {
   min-height: 300px;
-  
+
   icon {
     margin-left: -20px;
     margin-top: -20px;
@@ -310,7 +310,7 @@ div.github-box-title {
     font-size: 13px !important;
     padding: 5px 10px 5px 30px !important;
   }
-  
+
   .github-stats {
     top: 3px !important;
   }
