@@ -45,6 +45,6 @@ And yes, it's a dragon, it has 4 limbs + wings :D
 
 #### Final words
 
-Well, that should be all. If you have questions, comments, or simply would like the full Scene project, just leave me a message in the Contact section, or drop a line in the [MWD's topic on Duality's forums](http://forum.adamslair.net/viewtopic.php?f=18&t=277).
+Well, that should be all. If you have questions, comments, or simply would like the full Scene project, just leave me a message in the Contact section, or drop a line in the [MWD's topic on Duality's forums](http://forum.adamslair.net/viewtopic.php?f=18&t=554).
 
 See ya next time!
