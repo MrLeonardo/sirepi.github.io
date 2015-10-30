@@ -30,7 +30,7 @@ the <xn>Brick</xn> to change its color (from red to black) depending on the rema
 In addition, the backing field was decorated with the <xc>[NonSerialized]</xc> attribute, due to the fact that we won't be saving the Bricks inside our Scene directly, but rather we will implement also a generation mechanism
 to do the hard work for us.
 
-<explain>Setting a field as [NonSerialized] is basically telling the engine that there is no need to save the information contained in the field during the serialization process, which happens when you save your GameObject or Resource. This can be useful when you are dealing with fields that contain volatile data (i.e. data that you don't mind losing every time, or that might be even dangerous to keep stored) and that you are sure will be re-initialized
+<explain>Setting a field as [DontSerialize] is basically telling the engine that there is no need to save the information contained in the field during the serialization process, which happens when you save your GameObject or Resource. This can be useful when you are dealing with fields that contain volatile data (i.e. data that you don't mind losing every time, or that might be even dangerous to keep stored) and that you are sure will be re-initialized
 correctly when required.</explain>
 
 Lastly, I added a <xc>bool Hit()</xc> method, which will be called every time the <xn>Ball</xn> hits a <xn>Brick</xn>, in order to decrease the Brick's remaining <xp>HitPoints</xp> and, eventually, removing it from the <xn>Scene</xn> altogether; the
@@ -59,9 +59,7 @@ The second point will be implemented in conjuction with the <xn>Ball</xn>-<xn>Br
 Again, some things you will (or should) notice in the code:
 
 * Once again I use <xc>[NonSerialized]</xc> private fields to hold the score and lives; as I explained before, there is no need to store the score inside the game's Resources and, even if you were to implement a Save/Load mechanism to keep on playing a game from an arbitrary point, it would be better to save the current information inside the save file itself without cluttering the scene.
-* You might ask what is <xp>GameRes.Data.Brick_Prefab</xp> and where it came from: this is a nice feature of the Duality editor. Basically, each Resource you add to your game project is automatically added to <xp>GameRes.Data</xp>, which acts as a collection of all the custom Resources available in the project
-(those under the Default folder in the Project View are already present in the respective Duality classes); if you were to have
-folders and subfolders in your project, their structure would be mirrored by GameRes.Data, allowing for quick access to your Resources from the code.
+* You might ask what is <xp>BrickPrefab</xp> and why do we need it: it is basically needed in order to tell our component which one is the correct Prefab that should be instantiated as a "Brick". Just drag the Brick Prefab from the <xd></xd>Project View</xd> and drop it in the corresponding cell in the editor.
 * to remove the connection between a GameObject and the Prefab it was based on we use <xc>BreakPrefabLink()</xc>; I guess there is no harm in keeping it, as long as you don't alter the Prefab using <xp>GameObject.PrefabLink</xp> methods. I just prefer to stay safe :) and also it keeps the game environment clean in my mind.
 * I always use <xp>this.GameObj.ParentScene</xp> to determine which <xn>Scene</xn> a new GameObject should be added to because, unless <xp>Scene.Current</xp>, it lets you work with Components in Scenes that are not the currently active one; for example, you might need to generate a level in one Scene, while currently you are showing another Scene as a loading
 screen. Again, it's just what I feel is best.. I might be wrong :)
