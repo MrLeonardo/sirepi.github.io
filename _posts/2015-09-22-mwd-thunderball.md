@@ -8,7 +8,7 @@ published: true
 lesson: mwd#2
 images: mwd-thunderball
 ---
-Second episode of Made with Duality! This time, get ready for...
+Second episode of Made with Duality! This time, get ready for some shocking action...
 <!--more-->
 
 #### Thunderball
