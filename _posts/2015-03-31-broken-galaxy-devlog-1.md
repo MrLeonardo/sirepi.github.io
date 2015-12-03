@@ -18,7 +18,7 @@ In this first picture, you can see the new System panel, which now includes a na
 In addition, on the top of the panel you now have a status bar that will include useful informations throughout the game, but for the moment only includes the <xn>Menu</xn> button (not working) and the <xn>Game speed</xn> controls (those are operational :D).
 
 This second picture shows two AIs battling each other.. unfortunately they are still too stupid and will just try to steal the same systems over and over and simply ignore you, until you conquered all the rest of the sector and it's too late to stop you.. I will get to that after the rest of the game is in a better state.  
-Also, in the status bar, you can see <xn>Credits</xn> and <xn>Tech points</xn> are not being counted.
+Also, in the status bar, you can see <xn>Credits</xn> and <xn>Tech points</xn> are now being counted.
 
 {% include lightbox.html img='2' %}
 
