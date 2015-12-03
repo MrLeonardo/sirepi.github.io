@@ -82,7 +82,7 @@ Some pictures...
 {% include lightbox.html img='4' %}
 
 #### Download
-Finally, you can download the game {% include file_download.html file='2015-03-14-broken-galaxy-alpha1.zip' text='here' %} 
+Finally, you can download the game {% include file_download.html file='2015-03-14-broken-galaxy-alpha2.zip' text='here' %} 
 
 And that's all. If you have questions or comments, just leave me a message in the Contact section, or drop a line in the [Broken Galaxy's topic on Duality's forums](http://forum.adamslair.net/viewtopic.php?f=18&t=277).
 
