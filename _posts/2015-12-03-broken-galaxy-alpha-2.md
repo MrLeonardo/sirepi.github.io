@@ -32,6 +32,7 @@ For the next release I plan to have one or more of the following implemented:
 * Music and sounds
 * Tech tree
 * Planetary modifiers
+* Star images and other planetary types
 
 #### The controls
 Same as before, the game is played entirely with the mouse, with the exception of the spacebar that pauses/unpauses the game and escape key that toggles the menu. As always, it costs 5 ships to colonize a planet.
